@@ -1,0 +1,53 @@
+Arguments: 
+  /Users/19928861/.nvm/versions/node/v17.6.0/bin/node /usr/local/Cellar/yarn/1.22.17_2/libexec/bin/yarn.js
+
+PATH: 
+  /Users/19928861/.nvm/versions/node/v17.6.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/Postgres.app/Contents/Versions/latest/bin
+
+Yarn version: 
+  1.22.17
+
+Node version: 
+  17.6.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: write EPROTO 00E6221701000000:error:0A000152:SSL routines:final_renegotiate:unsafe legacy renegotiation disabled:../deps/openssl/openssl/ssl/statem/extensions.c:908:
+  
+      at WriteWrap.onWriteComplete [as oncomplete] (node:internal/stream_base_commons:94:16)
+
+npm manifest: 
+  {
+      "name": "helloReac",
+      "version": "1.0.0",
+      "scripts": {
+          "start": "webpack serve --config=config/webpack.dev.js",
+          "build": "webpack --config=config/webpack.prod.js"
+      },
+      "dependencies": {
+          "react": "^17.0.1",
+          "react-dom": "^17.0.1",
+          "react-router-dom": "^5.2.0"
+      },
+      "devDependencies": {
+          "@babel/core": "^7.12.3",
+          "@babel/plugin-transform-runtime": "^7.12.1",
+          "@babel/preset-env": "^7.12.1",
+          "@babel/preset-react": "^7.12.1",
+          "babel-loader": "^8.1.0",
+          "clean-webpack-plugin": "^3.0.0",
+          "html-webpack-plugin": "^4.5.0",
+          "webpack": "^5.4.0",
+          "webpack-cli": "^4.2.0",
+          "webpack-dev-server": "^3.11.0",
+          "webpack-merge": "^5.2.0"
+      }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
